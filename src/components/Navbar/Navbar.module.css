@@ -4,5 +4,9 @@
 }
 
 .item {
-  color: wheat;
+  color: white;
+}
+
+.item.active a {
+  color: #3ff;
 }
