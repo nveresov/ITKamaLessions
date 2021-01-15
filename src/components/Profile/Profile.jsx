@@ -1,19 +1,15 @@
-import react from 'react';
-import MyPoats from './MyPosts/MyPosts';
-import s from './Profile.module.css'
+import react from "react";
+import MyPoats from "./MyPosts/MyPosts";
+import s from "./Profile.module.css";
+import ProfileInfo from "./Profileinfo/ProfileInfo";
 
 const Profile = () => {
-    return (
-    <div className='content'>
-    <div>
-      <img src='https://theinpaint.com/images/example-1-2.jpg' />
+  return (
+    <div className="content">
+      <ProfileInfo />
+      <MyPoats />
     </div>
-    <div>
-      ava + descr
-    </div>
-    <MyPoats />
-  </div>
-  )
-}
+  );
+};
 
 export default Profile;
