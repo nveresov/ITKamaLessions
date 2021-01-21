@@ -2,8 +2,8 @@ import react from "react";
 import { NavLink } from "react-router-dom";
 import s from "./Dialogs.module.css";
 
-import DialogItem from "./DialogItem/DialogItem.jsx";
-import Message from "./Message/Message.jsx";
+import DialogItem from "./Dial;ogItem/DialogItem.jsx";
+import Message from "./Messaage/Message.jsx";
 
 const Dialogs = () => {
   let dialogs = [
@@ -33,7 +33,7 @@ const Dialogs = () => {
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>{dialogElements}</div>
-      <div className="messages">{messagesElements} </div>
+      <div className={s.messages}>{messagesElements} </div>
     </div>
   );
 };
