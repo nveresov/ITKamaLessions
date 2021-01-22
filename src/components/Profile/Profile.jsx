@@ -1,13 +1,13 @@
 import react from "react";
-import MyPoats from "./MyPosts/MyPosts";
+import MyPosts from "./MyPosts/MyPosts";
 import s from "./Profile.module.css";
 import ProfileInfo from "./Profileinfo/ProfileInfo";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className="content">
       <ProfileInfo />
-      <MyPoats />
+      <MyPosts posts={props.posts} />
     </div>
   );
 };

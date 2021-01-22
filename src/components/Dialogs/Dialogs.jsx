@@ -5,7 +5,7 @@ import s from "./Dialogs.module.css";
 import DialogItem from "./Dial;ogItem/DialogItem.jsx";
 import Message from "./Messaage/Message.jsx";
 
-const Dialogs = () => {
+const Dialogs = (props) => {
   let dialogs = [
     { id: 1, name: "Dimych" },
     { id: 2, name: "Andrey" },
