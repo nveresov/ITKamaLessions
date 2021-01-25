@@ -6,11 +6,11 @@ import DialogItem from "./Dial;ogItem/DialogItem.jsx";
 import Message from "./Messaage/Message.jsx";
 
 const Dialogs = (props) => {
-  let dialogElements = props.dialogs.map((d) => (
+  let dialogElements = props.state.dialogs.map((d) => (
     <DialogItem name={d.name} id={d.id} />
   ));
 
-  let messagesElements = props.messages.map((m) => (
+  let messagesElements = props.state.messages.map((m) => (
     <Message message={m.message} />
   ));
 
