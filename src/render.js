@@ -5,6 +5,7 @@ import App from './App';
 //import serviceWorker from './serviceWorker'
 ///import state from './redux/state'
 import { addPost } from './redux/state'
+import { updateNewPostText } from './redux/state'
 import { BrowserRouter } from 'react-router-dom';
 
 //addPost('SamuraiJS.COM')
@@ -13,7 +14,7 @@ export let renderEntireTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
-        <App state={state} addPost={addPost} />
+        <App state={state} addPost={addPost} updateNewPostText={updateNewPostText} />
       </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
